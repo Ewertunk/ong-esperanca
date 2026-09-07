@@ -25,3 +25,6 @@ As imagens são carregadas com o elemento `picture`, priorizando WebP e mantendo
 ## Como visualizar
 
 Abra o arquivo `index.html` diretamente no navegador. Não há dependências ou processo de build.
+## Formulário
+
+O projeto possui um formulário de cadastro de voluntários com validação em JavaScript e armazenamento de dados com localStorage.
