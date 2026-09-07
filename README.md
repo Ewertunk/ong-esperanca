@@ -1,36 +1,83 @@
 # ONG Esperança
 
-Projeto institucional responsivo da ONG Esperança, desenvolvido com HTML5 e CSS puro.
+Projeto acadêmico desenvolvido na disciplina de Desenvolvimento Front-end.
 
-## Arquivos principais
+O objetivo do projeto é criar um site para uma ONG fictícia, apresentando suas ações sociais e permitindo o cadastro de voluntários e apoiadores.
 
-- `index.html`: página inicial da ONG.
-- `cadastro.html`: formulário de cadastro de voluntários e apoiadores.
-- `styles.css`: estilos compartilhados entre as páginas.
-- `assets/img/acao-comunitaria.webp`: versão otimizada em WebP.
-- `assets/img/acao-comunitaria.png`: versão alternativa em PNG.
+## Tecnologias utilizadas
 
-## Recursos usados no formulário
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
 
-O formulário foi organizado com `fieldset` e `legend` e utiliza validações nativas do HTML5, incluindo `required`, `minlength`, `maxlength`, `type="email"`, `type="date"` e `pattern`.
+## Funcionalidades
 
-Padrões de entrada:
+- Página inicial da ONG
+- Página de cadastro de voluntários
+- Formulário com validação
+- Interações com JavaScript
+- Armazenamento de nome e e-mail com localStorage
+- Layout responsivo
+- Recursos básicos de acessibilidade
 
-- CPF: `000.000.000-00`
-- Telefone: `(00) 00000-0000`
-- CEP: `00000-000`
+## Estrutura do projeto
 
-As imagens são carregadas com o elemento `picture`, priorizando WebP e mantendo PNG como alternativa.
+- `index.html` - página inicial
+- `html/` - páginas secundárias
+- `css/` - arquivos de estilo
+- `js/` - arquivos JavaScript
+- `assets/` e `imagens/` - imagens utilizadas no projeto
 
-## Como visualizar
+## Como executar
 
-Abra o arquivo `index.html` diretamente no navegador. Não há dependências ou processo de build.
-## Formulário
+Não é necessário instalar dependências.
 
-O projeto possui um formulário de cadastro de voluntários com validação em JavaScript e armazenamento de dados com localStorage.
-## Correções
+Para visualizar o projeto:
 
-Ajustes simples de links e caminhos do projeto foram realizados para garantir o funcionamento correto da navegação.git 
-## Acessibilidade
+1. Baixe ou clone o repositório.
+2. Abra a pasta no Visual Studio Code.
+3. Abra o arquivo `index.html` com o Live Server.
 
-Foi realizada uma revisão inicial de acessibilidade, verificando textos alternativos, labels dos formulários e navegação.
+## Dependências
+
+O projeto não utiliza bibliotecas ou frameworks externos. Foi desenvolvido com JavaScript puro.
+
+## Build
+
+Não existe processo de build, pois o projeto utiliza apenas HTML, CSS e JavaScript.
+
+## Testes
+
+Os testes foram realizados manualmente no navegador, verificando:
+
+- funcionamento dos links;
+- envio e validação do formulário;
+- funcionamento do localStorage;
+- carregamento das páginas;
+- responsividade;
+- alguns pontos básicos de acessibilidade.
+
+## Versionamento
+
+O projeto utiliza Git e GitHub para controle de versões.
+
+Foram utilizadas branches como:
+
+- `main`
+- `develop`
+- `feature/formulario`
+- `feature/acessibilidade`
+- `release/v1.0`
+- `hotfix/correcao-link`
+
+Também foram utilizados commits semânticos, issues, milestone e pull request.
+
+## Versão
+
+Versão atual: `v1.0`
+
+## Autor
+
+Projeto desenvolvido por Ewerton Alberto para fins acadêmicos.
