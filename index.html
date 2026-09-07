@@ -8,6 +8,7 @@
  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo principal</a>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="ONG Esperança - início">
@@ -22,12 +23,16 @@
       </nav>
 
       <button id="btn-tema" type="button">Modo escuro</button>
-    <a class="button button-small" href="html/cadastro.html" id="btn-ajudar">
+ <a class="button button-small"
+   href="html/cadastro.html"
+   id="btn-ajudar"
+   aria-label="Quero ajudar e acessar o cadastro">
   Quero ajudar <span aria-hidden="true">↗</span>
+  </a>
     </div>
   </header>
 
-  <main id="inicio">
+  <main id="inicio" tabindex="-1">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">

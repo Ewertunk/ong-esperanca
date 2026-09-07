@@ -1242,3 +1242,49 @@ body.dark-mode textarea:focus-visible {
 .skip-link:focus {
   left: 10px;
 }
+/* =================================
+   AJUSTES DE CONTRASTE - WCAG
+================================= */
+
+/* Texto do destaque principal */
+.hero-text {
+  color: #ffffff;
+}
+
+/* Pequenos títulos sobre fundo claro */
+.eyebrow {
+  color: #8a382c;
+}
+
+/* Botão Quero ajudar */
+#btn-ajudar {
+  background-color: #174746;
+  color: #ffffff;
+}
+
+/* Textos das seções claras */
+#sobre p,
+#projetos > .container > p,
+#contato p,
+#contato address,
+#contato a {
+  color: #174746;
+}
+
+/* Cards */
+.project-card.card-teal p {
+  color: #ffffff;
+}
+
+.project-card.card-coral p {
+  color: #121212;
+}
+
+/* Mantém boa leitura no modo escuro */
+body.dark-mode #sobre p,
+body.dark-mode #projetos p,
+body.dark-mode #contato p,
+body.dark-mode #contato address,
+body.dark-mode #contato a {
+  color: #f5f5f5;
+}
