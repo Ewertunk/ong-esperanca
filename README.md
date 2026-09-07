@@ -28,3 +28,6 @@ Abra o arquivo `index.html` diretamente no navegador. Não há dependências ou 
 ## Formulário
 
 O projeto possui um formulário de cadastro de voluntários com validação em JavaScript e armazenamento de dados com localStorage.
+## Correções
+
+Ajustes simples de links e caminhos do projeto foram realizados para garantir o funcionamento correto da navegação.
