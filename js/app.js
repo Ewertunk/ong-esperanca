@@ -2,7 +2,7 @@ console.log("JavaScript da ONG Esperança funcionando!");
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Botão "Quero ajudar"
+    // BOTÃO "QUERO AJUDAR"
     const botaoAjudar = document.getElementById("btn-ajudar");
 
     if (botaoAjudar) {
@@ -11,21 +11,50 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Formulário de cadastro
+
+    // MODO ESCURO
+    const botaoTema = document.getElementById("btn-tema");
+
+    const temaSalvo = localStorage.getItem("tema");
+
+    if (temaSalvo === "escuro") {
+        document.body.classList.add("dark-mode");
+
+        if (botaoTema) {
+            botaoTema.textContent = "Modo claro";
+        }
+    }
+
+    if (botaoTema) {
+        botaoTema.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("tema", "escuro");
+                botaoTema.textContent = "Modo claro";
+            } else {
+                localStorage.setItem("tema", "claro");
+                botaoTema.textContent = "Modo escuro";
+            }
+
+        });
+    }
+
+
+    // FORMULÁRIO DE CADASTRO
     const formulario = document.getElementById("form-cadastro");
 
-    // Recupera os dados salvos no localStorage
+    // Recupera dados salvos
     const dadosSalvos = localStorage.getItem("voluntario");
 
     if (dadosSalvos) {
 
-        // Converte o texto novamente para objeto JavaScript
         const voluntario = JSON.parse(dadosSalvos);
 
         const campoNome = document.getElementById("nome");
         const campoEmail = document.getElementById("email");
 
-        // Coloca os dados novamente nos campos
         if (campoNome) {
             campoNome.value = voluntario.nome;
         }
@@ -35,34 +64,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Envio do formulário
+
+    // ENVIO DO FORMULÁRIO
     if (formulario) {
 
         formulario.addEventListener("submit", function (event) {
 
-            // Impede o recarregamento da página
             event.preventDefault();
 
             const nome = document.getElementById("nome").value.trim();
             const email = document.getElementById("email").value.trim();
 
-            // Validação
             if (nome === "" || email === "") {
 
                 alert("Preencha os campos obrigatórios.");
 
             } else {
 
-                // Cria um objeto com os dados
                 const voluntario = {
                     nome: nome,
                     email: email
                 };
 
-                // Converte o objeto para texto
                 const dadosParaSalvar = JSON.stringify(voluntario);
 
-                // Salva no localStorage
                 localStorage.setItem("voluntario", dadosParaSalvar);
 
                 alert("Cadastro realizado com sucesso!");

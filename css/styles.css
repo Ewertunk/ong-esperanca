@@ -1097,3 +1097,96 @@ nav a[aria-current="page"] {
     grid-column: span 7;
   }
 }
+
+/* =========================
+   MODO ESCURO
+========================= */
+
+#btn-tema {
+  padding: 10px 16px;
+  border: 1px solid #174746;
+  background-color: transparent;
+  color: #174746;
+  cursor: pointer;
+  font: inherit;
+}
+
+#btn-tema:hover {
+  background-color: #174746;
+  color: #ffffff;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .site-header,
+body.dark-mode .site-footer {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode label {
+  color: #f5f5f5;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #dddddd;
+}
+
+body.dark-mode #btn-tema {
+  background-color: #ffffff;
+  color: #121212;
+  border-color: #ffffff;
+}
+/* Corrige o modo escuro em toda a página */
+
+body.dark-mode main,
+body.dark-mode main section {
+  background-color: #121212 !important;
+  color: #f5f5f5;
+}
+
+body.dark-mode .contact,
+body.dark-mode .contact-grid,
+body.dark-mode .form-page {
+  background-color: #121212 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode small,
+body.dark-mode label,
+body.dark-mode address {
+  color: #f5f5f5;
+}
+
+body.dark-mode .contact-details a,
+body.dark-mode nav a {
+  color: #f5f5f5;
+}
+
+body.dark-mode fieldset,
+body.dark-mode .cadastro-form {
+  background-color: #1f1f1f;
+  border-color: #555555;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #777777;
+}
