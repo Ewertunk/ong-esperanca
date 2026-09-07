@@ -1190,3 +1190,55 @@ body.dark-mode textarea {
   color: #ffffff;
   border-color: #777777;
 }
+/* Acessibilidade - foco do teclado */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+body.dark-mode a:focus-visible,
+body.dark-mode button:focus-visible,
+body.dark-mode input:focus-visible,
+body.dark-mode select:focus-visible,
+body.dark-mode textarea:focus-visible {
+  outline-color: #ffd54f;
+}
+/* Acessibilidade - foco visível pelo teclado */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+body.dark-mode a:focus-visible,
+body.dark-mode button:focus-visible,
+body.dark-mode input:focus-visible,
+body.dark-mode select:focus-visible,
+body.dark-mode textarea:focus-visible {
+  outline-color: #ffd54f;
+}
+/* Link para pular direto ao conteúdo */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  color: #121212;
+  z-index: 9999;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
