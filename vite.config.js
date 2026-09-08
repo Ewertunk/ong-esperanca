@@ -6,6 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
+    base: "/ong-esperanca/",
+    
   build: {
     rollupOptions: {
       input: {
